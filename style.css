@@ -1,0 +1,60 @@
+body {
+    background-color: #1E7E79;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify ;
+}
+
+
+
+main {display: grid; grid-template-areas: "n ar ar" "as ar ar" "f f f";   max-width: 800px; margin: auto;}
+
+nav {grid-area: n; background-color: #e5e5f7; width: 200px; border-radius: 10px; max-height: 114px;}
+
+article {grid-area: ar;   background-color: #e5e5f7;  border-radius: 10px; width: 650px; padding: 10px; text-align: justify;}
+
+aside {grid-area: as; width: 200px;}
+
+footer {grid-area: f; border-radius: 10px; padding: 10px; text-align: center;  background-color:#e5e5f7;} 
+
+ul {list-style-type: none;
+   margin: 0;
+   padding: 0;
+   width: 200px;
+   background-color: #e5e5f7;
+   border-radius: 15px;}
+
+ol {list-style-type: none;}
+
+h1 {text-align: center;}
+  
+
+  li a {
+    text-align: center;
+  border-bottom: 1px solid #2fb4ae;
+    display: block;
+    color: #1E7E79;
+    text-decoration: none;
+    border-radius: 15px;}
+
+ nav a:hover {
+      background-color: #2fb4ae;
+      color: #e5e5f7;}
+
+
+  a {color: #1E7E79;
+    text-decoration-style: none;
+    list-style-type: none;}
+
+  table {text-align: center;}
+
+
+
+
+@media sreen and (max-width: 400px) {
+    .main { 
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:"n"
+                            "ar"
+                            "f"  ; } }
+
+
